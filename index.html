@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manage Cart</title>        
+        <script src="cart.js"></script>        
+        <link href="styles.css" rel="stylesheet" /> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <span>All Items</span>
+                <div id="success-msg" class="success-msg" style="display:none;">Item2 is Added to Cart</div>
+            </div>
+            <div class="cart-items">
+                <div class="cart-list" id="cartlist">                   
+                </div> 
+                <div class="cart-details" >
+                    <div class="section1">
+                        <div class="details-header">
+                            <div style="width:52%;float:left;margin-right: 10px;" id="total_items">Items (0)</div>
+                            <div style="width:30%;float:left;">Quantity</div>
+                            <div style="width:14%;float:left;">Price</div>
+                        </div>
+                        <div style="clear:both;height:200px;width:100%;overflow-y: auto;" id="list_items">
+                            
+                        </div>
+                    </div> 
+                    <div class="section2">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="width:48%;" > 
+                                    <div id="summaryitems">Items (0)</div>
+                                </td>
+                                <td>:</td>
+                                <td style="width:48%;text-align:right;" id="summaryitems">
+                                    <div id="summaryvalue">0</div>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td style="width:48%;">
+                                    Discount
+                                </td>
+                                <td>:</td>
+                                <td style="width:48%;text-align:right;">$104</td>
+                            </tr>
+                            <tr>
+                                <td style="width:48%;">
+                                    Type Discount
+                                </td>
+                                <td>:</td>
+                                <td style="width:48%;text-align:right;">0</td>
+                            </tr>
+                            <tr bgcolor="#ddd" >
+                                <td style="width:48%;">
+                                    Order Total
+                                </td>
+                                <td>:</td>
+                                <td style="width:48%;text-align:right;">
+                                    <div id="summarytotal"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        <script src="cartListing.js"></script>
+    </body>
+</html>

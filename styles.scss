@@ -1,0 +1,117 @@
+/* Define standard variables and values for website */
+$headingTextColor: gray;
+$headingFontsize: 16px;
+$headingFontWeight: bold;
+$fullWidth: 100%;
+$backGround1 : #00800087;
+$textCenter : center;
+$margin10 : 10px;
+$margin20 : 20px;
+$borderColor : #80808042;
+
+
+.container{
+  color : $headingTextColor;
+  width:100%;
+}
+.header{
+  color : $headingTextColor;
+  width: $fullWidth;
+  height: 45px;
+  border-top: 1px solid $borderColor;
+  border-bottom: 1px solid $borderColor;
+  line-height: 40px;
+  text-indent: 16px;
+  font-weight: $headingFontWeight;
+  font-size : $headingFontsize;
+}
+.success-msg{
+  width: auto;
+  float: right;
+  height: 30px;
+  background: $backGround1;
+  margin-right: 47%;
+  color: #fff;
+  line-height: 30px;
+  margin-top: 7px;
+  text-align: $textCenter;
+  text-indent: 0px;
+}
+.cart-items{
+  width: $fullWidth;
+  margin-top : $margin20;
+  height : 87vh;
+}
+.cart-list{
+  width : 70%;
+  float : left;
+  padding: 15px;
+}
+.cart-details{
+  width : 27%;
+  float : left;
+  margin-top: 16px;
+}
+.details-header{
+  width:100%;
+  height:30px;
+  border-bottom: 1px solid #80808042;
+    border-top: 1px solid #80808042;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9e9e9e;
+    clear:both;
+}
+.item-info{
+  clear:both;height:45px;width:100%;margin-top:10px;
+}
+.section1,.section2{
+  width:100%;
+}
+.section2 table tr{
+  height: 30px;
+}
+.section2 table{
+  border: 1px solid #d3d3d36e;
+}
+.section1{
+  margin-bottom : 10px;
+}
+@media only screen and (max-width: 1100px) {
+  .cart-list{
+    width : 100%;
+    clear : both;
+  }
+  .cart-details{
+    width : 100%;
+    clear: both;
+    margin-top: 16px;
+  }
+  .section1,.section2{
+    width:48%;
+    float:left;
+  }
+  .section1{
+    margin-right : 10px;
+    margin-bottom : 0px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .cart-list{
+    width : 100%;
+    clear : both;
+  }
+  .cart-details{
+    width : 100%;
+    clear: both;
+    margin-top: 16px;
+  }
+  .section1,.section2{
+    width:100%;
+    
+  }
+  .section1{
+    margin-bottom : 10px;
+  }
+}
